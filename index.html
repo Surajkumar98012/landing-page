@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Reponsive portfolio Landing page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section class="mainpage" id="part">
+		<header>
+			<a href="#" class="logo">Inworld</a>
+			<div id="toggle" onclick="toggle()"></div>
+		</header>
+		<div class="content">
+			<h2>Hello world,<br>i'm <span>Suraj kumar</span></h2>
+			<p>In digital marketing, a landing page is a standalone web page, created specifically for a marketing or advertising campaign. It’s where a visitor “lands” after they click on a link in an email, or ads from Google, Bing, YouTube, Facebook, Instagram, Twitter, or similar places on the web.</p>
+			<a href="#">Know more</a>
+			</div>
+			<ul class="sci">
+				<li><a href="#"><img src="F.png"></a></li>
+				<li><a href="#"><img src="T.png"></a></li>
+				<li><a href="#"><img src="I.png"></a></li>
+
+			</ul>
+		
+	</section>
+	<div id="nav">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Service</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		function toggle() {
+			var part= document.getElementById('part');
+			var nav= document.getElementById('nav');
+			part.classList.toggle('active')
+			nav.classList.toggle('active')
+		}
+	</script>
+
+</body>
+</html>

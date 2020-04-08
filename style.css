@@ -1,0 +1,173 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+
+}
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 100px;
+	z-index: 10000;
+	transition: 0.6s;
+}
+header .logo{
+position: relative;
+font-weight: 700;
+font-family: "Curlz MT";
+color: rgb(145,054,126);
+text-decoration: none;
+font-size: 2em;
+text-transform: uppercase;
+letter-spacing: 2px;
+transition: 0.6s;
+}
+header #toggle{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+header #toggle:before{
+   content: '';
+   position: absolute;
+   top: 7px;
+   width: 30px;
+   height: 2px;
+   background: #fff; 
+}
+header #toggle:after{
+   content: '';
+   position: absolute;
+   bottom: : 7px;
+   width: 30px;
+   height: 2px;
+   background: #fff; 
+}
+.mainpage.active header #toggle:before{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotate(45deg);
+}
+.mainpage.active header #toggle:after{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotate(-45deg);
+}
+.mainpage{
+	position: absolute;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	background: url(suraj.jpg);
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	transition: 0.5s;
+	z-index: 2;
+}
+.mainpage.active{
+	transform: translate(-280px);
+}
+#nav{
+   position: fixed;
+   top: 0;
+   right: -200px;
+   width: 280px;
+   height: 100vh;
+   background:rgb(14,122,145);
+   z-index: 1;
+   display: grid;
+   align-content:center;
+   transition: 0.5s;
+
+}
+#nav.active{
+ right: 0;
+
+}
+#nav ul{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+#nav ul li{
+	list-style: none;
+}
+#nav ul li a{
+  color:rgb(244,245,125);
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Castellar";
+  font-size: 2.7em;
+  font-weight: 550;
+  text-transform: uppercase;
+}
+
+ .content{
+ 	max-width: 600px;
+ 	color: white;
+
+
+ }
+ .content h2{
+ 	color: rgb(255,145,145);
+ }
+ .content h2 span{
+ 	color: #40c3ff;
+ 	font-size: 1.9em;
+ 	font-family: "Edwardian Script ITC";
+
+ }
+ .content p{
+ 	font-size: 1.2em;
+ 	color:rgb(245,226,15);
+ 	font-weight: 450;
+ 	font-family: "Edwardian Script ITC";
+ 	font-size: 0.9cm;
+ }
+ .content a{
+ 	position: relative;
+ 	display: inline-block;
+ 	margin-top: 20px;
+ 	background:rgb(145,158,255);
+ 	color: #000;
+ 	padding: 10px 30px;
+ 	text-decoration: none;
+ 	font-size: 1.2em;
+ 	font-weight: 500;
+
+ }
+ .sci{
+ 	position: absolute;
+ 	display: flex;
+ 	flex-direction: column;
+ 	right: 100px;
+
+ }
+ .sci li{
+ 	list-style: none;
+ }
+ .sci li a{
+ 	position: relative;
+ 	display: grid;
+ 	place-items:center;
+ 	width: 50px;
+ 	height: 50px;
+ 	text-decoration: none;
+ 	border: 1px solid #1f2f3f;
+ 	margin: 10px 0 0;
+ }
+ .sci li a:hover{
+ 	background: #fff;
+ }
+ .sci li a img{
+ 	max-width: 50px;
+ 	filter: invert(1);
+ 	mix-blend-mode: difference;
+ }
